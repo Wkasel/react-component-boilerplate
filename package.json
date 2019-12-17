@@ -1,7 +1,7 @@
 {
-  "name": "react-hooks-easter-egg",
-  "version": "1.0.0",
-  "description": "React Easter Egg rebuilt with wuth custom React Hooks for React 16.8+.",
+  "name": "react-component-boilerplate",
+  "version": "0.0.0",
+  "description": "Just another React component boilerplate",
   "author": "Wkasel",
   "license": "MIT",
   "repository": "Wkasel/react-hooks-easter-egg",

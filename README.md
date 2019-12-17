@@ -1,29 +1,37 @@
-# react-hooks-easter-egg
+# React Component Boilerplate
 
-> React Easter Egg rebuilt with with custom React Hooks for React 16.8+.
+> Shoutout to [Create React Component](https://github.com/facebookincubator/create-react-app). This was originally bootstrapped with their CLI. I have a fork (WIP) to push these upgrades to their templates. This repo will be merged (hopefully).
 
-Heavily inspired by
+React Component Boilerplate is a mildly opinionated starter template for bootstrapping a new react shared react component.
 
-[![NPM](https://img.shields.io/npm/v/react-hooks-easter-egg.svg)](https://www.npmjs.com/package/react-hooks-easter-egg) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+### Technologies
+
+- [prettier](https://prettier.io)
+- [eslint](https://eslint.org)
 
 ## Install
 
 ```bash
-npm install --save react-hooks-easter-egg
+git clone https://github.com/Wkasel/react-component-boilerplate ./myapp && cd $_ && rm -rf .git
 ```
 
 ## Usage
 
 ```jsx
-import React, { Component } from 'react';
+import React from 'react';
+import MySharedComponent from 'my-shared-component';
 
-import MyComponent from 'react-hooks-easter-egg';
+const MyAppThing = ({ title }) => {
+  return <MySharedComponent title={title} />;
+};
 
-class Example extends Component {
-  render() {
-    return <MyComponent />;
-  }
-}
+MyAppThing.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+MyAppThing.defaults = {
+  title: 'Rick and Morty',
+};
 ```
 
 ## License
